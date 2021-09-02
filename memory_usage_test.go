@@ -34,7 +34,7 @@ func TestMemoryUsage(t *testing.T) {
 	defer ro.Destroy()
 
 	key := []byte("key")
-	value := make([]byte, 1024)
+	value := make([]byte, 2048)
 	_, err = rand.Read(value)
 	ensure.Nil(t, err)
 
