@@ -18,7 +18,7 @@ before_install:
 install:
   - git clone https://github.com/facebook/rocksdb.git /tmp/rocksdb
   - pushd /tmp/rocksdb
-  - git reset --hard v6.5.3
+  - git reset --hard v6.22.1
   - make clean
   - make shared_lib -j`nproc`
   - sudo cp --preserve=links ./librocksdb.* /usr/lib/
